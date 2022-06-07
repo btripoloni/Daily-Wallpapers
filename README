@@ -11,7 +11,10 @@ This allows some program to take this font and use it to set a wallpaper.
 - Smarphones for now
 
 ### Running the server
-Clone the server, install the packages by running NPM and run the Express server
+- Clone the server, install the packages by running NPM.
+- Create a **images** and a **wallpappers** at the root folder of the project.
+- And run the Express server
+
 `node server.js -p 3000`
 
 ### Defining the Image Group.
