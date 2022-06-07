@@ -1,0 +1,27 @@
+{
+    "//1": "describes your app and its dependencies",
+    "//2": "https://docs.npmjs.com/files/package.json",
+    "//3": "updating this file will download and update your packages",
+    "name": "daily-wallpaper",
+    "version": "0.0.1",
+    "description": "A simple Node server that delivers a daily wallpaper.",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "jimp": "^0.16.0",
+      "luxon": "^2.4.0"
+    },
+    "engines": {
+      "node": "12.x"
+    },
+    "license": "MIT",
+    "keywords": [
+      "node",
+      "glitch",
+      "express"
+    ]
+  }
+  
