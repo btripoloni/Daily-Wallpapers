@@ -8,17 +8,21 @@ Daily-Wallpapers is a small server that picks one image a day from a group of se
 This allows some program to take this font and use it to set a wallpaper.
 
 ### Available formats 
-- Smarphones for now
+- Smarphones 1080x1920
+- PC 1920x1080
 
 ### Running the server
 - Clone the server, install the packages by running NPM.
-- Create a **images** and a **wallpappers** at the root folder of the project.
+- Create these folders at the root folder of the project.
+  -  portrait
+  -  landscape
+  -  wallpapers
 - And run the Express server
 
 `node server.js -p 3000`
 
 ### Defining the Image Group.
-Choose the images you will make available for wallpapers and put them in the "images" folder
+Choose the images you will make available for wallpapers and put them in the "portrait" or "landscape" folder
 
 ### How are the wallpapers made?
 On each request the server will get the time and if there is no image for that day, the Code will generate a new image for that day and delete the previous day's image, otherwise the server will send the image that was generated that day.
