@@ -36,7 +36,7 @@ async function serve_image(width, height, response){
   const now = DateTime.now();
   const today_file_name = `/${width}x${height}-${now.day}-${now.month}-${now.year}.jpg`
   const file_path = path.join(__dirname, 'wallpapers', today_file_name)
-  if(!fs.existsSync(file_path)){    
+  if(fs.existsSync(file_path)){    
     response.sendFile(file_path)
   }else{
     //Check if a file from Yesterday exists and Delete before generate a new image for Today.
